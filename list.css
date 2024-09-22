@@ -1,0 +1,55 @@
+.container {
+    width: 600px;
+    height: 600px;
+    overflow: scroll;
+    background-color: #7986cb;
+    padding: 20px;
+    color: #fff;
+    box-sizing: border-box;
+    margin: 10px auto;
+}
+
+h3,
+.user_form,
+.btn_group {
+    text-align: center;
+}
+
+
+.user_form {
+    margin-bottom: 20px;
+}
+
+button {
+    color: #fff;
+    background-color: #c2d352;
+    text-transform: capitalize;
+    text-decoration: none;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #434343;
+    transition: all 0.4s ease;
+}
+
+
+ul li {
+    list-style: none;
+    counter-increment: item;
+    margin-bottom: 20px;
+}
+
+ul li::before {
+    content: counter(item);
+    background-color: #f9dd94;
+    color: #fff;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 3px;
+    margin-right: 20px;
+}

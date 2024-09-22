@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="list.css">
+</head>
+<body>
+    <!-- 前端的第三方的库 -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="list.js"></script>
+    <div class="container">
+        <h3>User List</h3>
+        <div class="user_form">
+            <label for="username">Username</label>
+            <input type="text" id="username" value="" autocomplete="off">
+            <!-- 当label 和 id 的名字对应的时候,会有自动定位的效果 -->
+            <label for="age">Age</label>
+            <input type="text"  id="age" value="" autocomplete="off">
+        </div>
+        <div class="btn_group">
+            <button onclick="getList()">Get List</button>
+            <button onclick="postUser()">Add User</button>
+            <button onclick="deleteList()">Clear List</button>
+        </div>
+        <ul id="user_list"></ul>
+    </div>
+        
+</body>
+</html>
